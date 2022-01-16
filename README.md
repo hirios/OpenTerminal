@@ -24,7 +24,7 @@ Using Windows Terminal
 if explorer_path:
     os.popen(f'{COMMAND_WT} "{explorer_path}"')
 else:
-    os.popen(PATH_WINDOWS_TERMINAL)
+    os.popen(PATH_WT)
 ```
 
 CMD is default terminal
