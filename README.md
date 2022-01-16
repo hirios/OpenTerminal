@@ -11,13 +11,28 @@ COMMAND_CMD = 'start cmd /K cd'
 HOTKEY = 'ctrl+alt+t'
 ```
 
-The cmd is set as the default terminal
+Using CMD
 ```python
-os.popen(f'{COMMAND_CMD} "{explorer_path}"')
+if explorer_path:
+    os.popen(f'{COMMAND_CMD} "{explorer_path}"')
+else:
+    os.popen(PATH_CMD)
 ```
 
+Using Windows Terminal
+```python
+if explorer_path:
+    os.popen(f'{COMMAND_WT} "{explorer_path}"')
+else:
+    os.popen(PATH_WINDOWS_TERMINAL)
+```
+
+CMD is default terminal
 
 ## Use
+```
+python main.py
+```
 To open the terminal just press `ctrl+alt+t` like in linux distributions
 
 
