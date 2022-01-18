@@ -1,5 +1,5 @@
 # OpenTerminal
-Open the terminal in the folder that has focus with shortcut [Windows]
+Open the terminal in the directory that has focus using the hotkey [Only Windows]
 
 ![bandicam 2022-01-16 19-32-25-115](https://user-images.githubusercontent.com/35049559/149681385-33e791e4-82cc-4498-b0c2-b73d18fe264e.gif)
 
