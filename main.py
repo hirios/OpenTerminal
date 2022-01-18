@@ -30,9 +30,11 @@ while True:
 		# IF A WINDOWS EXPLORER WINDOW IS IN FOCUS
 		if explorer_path:
 			# COMMAND_WT OR COMMAND_CMD
-			os.popen(f'{COMMAND_WT} "{unquote(explorer_path)}"')
+			os.popen(f'{COMMAND_CMD} "{unquote(explorer_path)}"')
 		else:
 			# PATH_WT OR PATH_CMD
 			os.popen(PATH_CMD)
 
 		sleep(0.2)
+
+	sleep(0.05)
