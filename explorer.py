@@ -29,8 +29,7 @@ class Explorer:
         for sw in self.ShellWindows:
             if sw.HWND == hwnd:
                 try:
-                    path = sw.LocationURL.split('file:///')[1]
-                    path = path.replace('/', '\\')
+                    path = sw.LocationURL.split('file:///')[1].replace('/', '\\')
                     return path
                 except IndexError:
                     print('Directory not accessible')
